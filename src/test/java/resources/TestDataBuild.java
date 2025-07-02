@@ -24,7 +24,7 @@ public class TestDataBuild {
 		legs.setDestinationId(to);
 		legs.setDepartureFrom(departure);
 		legs.setDepartureTo(arrival);
-		List <Legs> legsList = new ArrayList();
+		List <Legs> legsList = new ArrayList<Legs>();
 		legsList.add(legs);
 		getCalendarfares.setLegs(legsList);
 		getCalendarfares.setStops(new ArrayList<String>());

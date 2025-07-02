@@ -32,7 +32,7 @@ public class PostRequestSteps {
 			e.printStackTrace();
 		}
 		
-		response = RestAssured.given(req).post();
+		// Remove duplicate POST request execution - will be executed in the @When step
 
 		res = given().spec(req).body(testData.getCalendarFares(from, to, departure, returns, cabin));
 		
